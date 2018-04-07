@@ -25,12 +25,12 @@ var index = template.Must(template.ParseFiles("index.html"))
 func loadContent() (*Content, error) {
 
 	//load content from text files
-	i, err := ioutil.ReadFile("intro.txt")
-	e, err := ioutil.ReadFile("experience.txt")
-	p, err := ioutil.ReadFile("projects.txt")
-	s, err := ioutil.ReadFile("skills.txt")
-	l, err := ioutil.ReadFile("links.txt")
-	ed, err := ioutil.ReadFile("education.txt")
+	i, err := ioutil.ReadFile("content/intro.txt")
+	e, err := ioutil.ReadFile("content/experience.txt")
+	p, err := ioutil.ReadFile("content/projects.txt")
+	s, err := ioutil.ReadFile("content/skills.txt")
+	l, err := ioutil.ReadFile("content/links.txt")
+	ed, err := ioutil.ReadFile("content/education.txt")
 	if err != nil {
 		return nil, err
 	}
