@@ -2,8 +2,33 @@
 <html>
     <head>
         <title>Tyler Moore</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <div class="container-fluid" id="header">
+            
+        </div>
+        <nav class="navbar navbar-inverse" data-spy="affix">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#header">Tyler Moore</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">EDUCATION</a></li>
+                        <li><a href="#">EXPERIENCE</a></li>
+                        <li><a href="#">PROJECTS</a></li>
+                        <li><a href="#">SKILLS</a></li>
+                        <li><a href="#">LINKS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <h2>Intro</h2>
         <p>{{.Intro}}</p>
         <h2>Education</h2>
