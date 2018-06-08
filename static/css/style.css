@@ -9,6 +9,11 @@
     background-color: #d80000;
 }
 
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 .navbutton {
     color: #ffffff !important;
 }
@@ -47,5 +52,8 @@
     }
     .collapse.in{
   		display:block !important;
+	}
+	#title-container {
+		width: auto;
 	}
 }
