@@ -10,6 +10,14 @@ h2 {
     text-align: center;
 }
 
+.fill {
+    align-items:center;
+}
+
+.fit-image {
+    min-width:100%;
+    min-height:100%
+}
 .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -68,6 +76,10 @@ h2 {
     #title-container {
         width: auto;
     }
+}
+
+#name {
+    font-size: 50px;
 }
 
 #miami-logo {
