@@ -50,11 +50,16 @@
         </div>
     </div>
     <div id="education" class="container">
-        <img id="miami-logo" src="https://www.miamioh.edu/_files/images/ucm/resources/logo/print-FSL_186K.jpg"> {{range .Education}}
         <h2>Education</h2>
+        <div class="col-sm-9">
         <h4>Computer Science and Software Engineering - Bachelor of Science, Miami University</h4>
+        {{range .Education}}
         <p>{{.}}</p>
         {{end}}
+        </div>
+	<div class="col-sm-3">
+        <img id="miami-logo" src="https://www.miamioh.edu/_files/images/ucm/resources/logo/print-FSL_186K.jpg">
+        </div>
     </div>
     <div id="experience" class="container">
         <h2>Experience</h2>
