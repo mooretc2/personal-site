@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tyler Moore</title>
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    </head>
-    <body>
-        <div class="container" id="header">
-            
-        </div>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>                        
-                    </button>
-                    <a class="navbar-brand navbutton" href="#header">Tyler Moore</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="navbutton" href="#">EDUCATION</a></li>
-                        <li><a class="navbutton" href="#">EXPERIENCE</a></li>
-                        <li><a class="navbutton" href="#">PROJECTS</a></li>
-                        <li><a class="navbutton" href="#">SKILLS</a></li>
-                        <li><a class="navbutton" href="#">LINKS</a></li>
-                    </ul>
-                </div>
+<head>
+    <title>Tyler Moore</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxygen" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand navbutton" href="#header">Tyler Moore</a>
             </div>
-        </nav>
-        <h2>Intro</h2>
-        <p>{{.Intro}}</p>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="navbutton" href="#">EDUCATION</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#">SKILLS</a>
+                    </li>
+                    <li>
+                        <a class="navbutton" href="#">LINKS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2>Tyler Moore</h2>
+            <p>{{.Intro}}</p>
+        </div>
+    </div>
+    <div id="education" class="container">
         <h2>Education</h2>
-        {{range .Education}}
+        <img id="miami-logo" src="https://www.miamioh.edu/_files/images/ucm/resources/logo/print-FSL_186K.jpg"> {{range .Education}}
         <p>{{.}}</p>
         {{end}}
+    </div>
+    <div id="experience" class="container">
         <h2>Experience</h2>
         {{range .Experience}}
         <p>{{.}}</p>
         {{end}}
+    </div>
+    <div id="projects" class="container">
         <h2>Projects</h2>
         {{range .Projects}}
         <p>{{.}}</p>
         {{end}}
+    </div>
+    <div id="skills" class="container">
         <h2>Skills</h2>
         {{range .Skills}}
         <p>{{.}}</p>
         {{end}}
+    </div>
+    <div id="links" class="container">
         <h2>Links</h2>
         {{range .Links}}
         <p>{{.}}</p>
         {{end}}
-    </body>
+    </div>
+</body>
+
 </html>
