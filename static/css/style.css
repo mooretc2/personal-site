@@ -53,7 +53,12 @@
     .collapse.in{
   		display:block !important;
 	}
+
 	#title-container {
 		width: auto;
 	}
+}
+
+#miami-logo {
+    width:300px;
 }
