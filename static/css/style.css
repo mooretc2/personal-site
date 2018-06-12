@@ -1,4 +1,4 @@
-h1, h2, h4 {
+a, h1, h2, h4 {
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -6,12 +6,13 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
+h1, h2 {
     text-align: center;
+    font-weight: bold;
 }
 
 .fill {
-    align-items:center;
+    align-items: center;
 }
 
 .fit-image {
@@ -85,6 +86,10 @@ h2 {
 #headshot {
     width: 300px;
     border-radius: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 #name {

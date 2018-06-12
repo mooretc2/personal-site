@@ -46,19 +46,19 @@
     <div class="jumbotron jumbotron-fluid" id="intro-jumbotron">
         <div class="container">
             <img src="/static/img/headshot.jpg" id="headshot">
-            <h2 class="name">Tyler Moore</h2>
-            <p>{{.Intro}}</p>
+            <h1 class="name">Tyler Moore</h1>
+            <h2>{{.Intro}}</h2>
         </div>
     </div>
     <div id="education" class="container">
         <h2>Education</h2>
-        <div class="col-sm-3 fill">
+        <div class="col-sm-8 col-sm-offset-2 fill">
             <img id="miami-logo" class="fit-image" src="https://www.miamioh.edu/_files/images/ucm/resources/logo/print-FSL_186K.jpg">
         </div>
         <div class="col-sm-9">
-            <h4>Computer Science and Software Engineering - Bachelor of Science, Miami University</h4>
+            <h3>Computer Science and Software Engineering - Bachelor of Science, Miami University</h3>
             {{range .Education}}
-            <p>{{.}}</p>
+            <h4>{{.}}</h4>
             {{end}}
         </div>
     </div>

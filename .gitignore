@@ -13,3 +13,6 @@ site
 
 # Project-local glide cache, RE: https://github.com/Masterminds/glide/issues/736
 .glide/
+
+# Resources that don't need to go in the repository
+static/img
