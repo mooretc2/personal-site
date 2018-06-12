@@ -1,8 +1,8 @@
-a, h1, h2, h3, h4 {
+a, h1, h2, h3 {
     font-family: 'Oxygen', sans-serif;
 }
 
-p {
+h4 {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -116,3 +116,6 @@ h3 {
     margin-top: 20px;
 }
 
+.content-div {
+    margin-bottom: 15px;
+}
