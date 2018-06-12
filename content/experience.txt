@@ -1,1 +1,11 @@
-This is the experience section.
+May - August 2017
+Developed a Jenkins plugin to apply a static program slicing algorithm to a continuous integration server.
+Created and administered a NodeJS server using Amazon Web Services to communicate between the plugin and a GitHub repository.
+Configured a Jenkins server on a Raspberry Pi running Linux for remote quality assurance testing.
+::
+May - December 2016
+Summer 2016: Object Oriented Programming under Dr. Gregory Gelfond
+Fall 2016: Data Abstractions & Structures under Dr. Angel Bravo-Salgado
+Evaluated programs of 30 – 50 students according to the instructor’s requirements and offered constructive feedback.
+Designed automated test classes to rapidly, transparently, and consistently grade students’ programs. 
+Reinforced students’ knowledge during twice-weekly office hours to explain course material and assist students with assignments.
