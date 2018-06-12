@@ -1,4 +1,4 @@
-a, h1, h2, h4 {
+a, h1, h2, h3, h4 {
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -9,6 +9,14 @@ p {
 h1, h2 {
     text-align: center;
     font-weight: bold;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 .fill {
@@ -93,7 +101,7 @@ h1, h2 {
 }
 
 #name {
-    font-size: 50px;
+    font-size: 63px;
 }
 
 #miami-logo {
