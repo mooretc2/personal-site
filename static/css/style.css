@@ -119,3 +119,7 @@ h3 {
 .content-div {
     margin-bottom: 15px;
 }
+
+.skills-content h4{
+    line-height: 1.5;
+}
