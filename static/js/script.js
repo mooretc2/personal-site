@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $(window).scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-      $(".fade").each(function() {
+      $(".fade-container").each(function() {
         /* Check the location of each desired element */
         var triggerPoint = $(this).offset().top + ($(this).outerHeight()/3);
         
