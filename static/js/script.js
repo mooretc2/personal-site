@@ -1,5 +1,5 @@
 //from https://stackoverflow.com/a/26697397
-$(document).load(function() {
+$(document).ready(function() {
     $(window).scroll(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
       $(".fade").each(function() {
