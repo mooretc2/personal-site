@@ -129,6 +129,14 @@ h3 {
     margin-right: auto;
 }
 
+.skills-tab:hover {
+    background-color: #46cdcf59;
+}
+
+.nav-tabs>li.active>a {
+    background-color: #46cdcfb8;
+}
+
 .content-div {
     margin-bottom: 15px;
 }
