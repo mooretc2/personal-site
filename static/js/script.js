@@ -4,10 +4,10 @@ $(document).ready(function() {
       var windowBottom = $(this).scrollTop() + $(this).innerHeight();
       $(".fade").each(function() {
         /* Check the location of each desired element */
-        var objectMiddle = $(this).offset().top + ($(this).outerHeight()/2);
+        var triggerPoint = $(this).offset().top + ($(this).outerHeight()/3);
         
         /* If the element is completely within bounds of the window, fade it in */
-        if (objectMiddle < windowBottom) { //object comes into view (scrolling down)
+        if (triggerPoint < windowBottom) { //object comes into view (scrolling down)
           if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
         } else { //object goes out of view (scrolling up)
           if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
