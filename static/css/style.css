@@ -117,7 +117,7 @@ h3 {
     max-height: 200px;
 }
 
-.fade {
+.fade-container {
     opacity: 1;
 }
 
@@ -129,7 +129,7 @@ h3 {
     margin-right: auto;
 }
 
-.skills-tab:hover {
+.skill-tab:hover {
     background-color: #46cdcf59;
 }
 
