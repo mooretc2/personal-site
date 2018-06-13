@@ -112,9 +112,16 @@ h3 {
     font-size: 35px;
 }
 
+#java-logo {
+    max-height: 200px;
+}
+
 .support-image {
     max-width: 100%;
     margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content-div {
@@ -138,5 +145,6 @@ h3 {
 }
 
 .container-container {
+    padding-top: 20px;
     padding-bottom: 50px;
 }
