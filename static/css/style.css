@@ -36,7 +36,7 @@ h3 {
     margin-bottom: 0;
     font-size: 15px;
     letter-spacing: 5px;
-    background-color: #d80000;
+    background-color: #f76262;
 }
 
 .navbar-brand {
@@ -90,6 +90,7 @@ h3 {
 
 #intro-jumbotron {
     padding-top: 80px;
+    margin-bottom: 0px;
 }
 
 #headshot {
@@ -122,4 +123,16 @@ h3 {
 
 .skills-content h4{
     line-height: 1.5;
+}
+
+.teal-container {
+    background-color: #65c0ba75;
+}
+
+.blue-container {
+    background-color: #cffdf8bf;
+}
+
+.header-footer {
+    background-color: #21658359;
 }
