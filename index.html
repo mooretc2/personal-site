@@ -50,148 +50,157 @@
             <h3 id="intro">{{.Intro}}</h3>
         </div>
     </div>
-    <div class="muted-container">
-    <div id="education" class="container">
-        <h2>Education</h2>
-        <div class="col-sm-2 fill">
-            <img id="miami-logo" class="fit-image support-image" src="/static/img/M-logo-transparent.jpg">
-        </div>
-        <div class="col-sm-10">
-            <h3>Computer Science and Software Engineering - Bachelor of Science, Miami University</h3>
-            {{range .Education}}
-            <h4>{{.}}</h4>
-            {{end}}
-        </div>
-    </div>
-    </div>
-    <div class="color-container">
-    <div id="experience" class="container">
-        <h2>Experience</h2>
-        <div>
-            <div class="col-sm-2">
-                <img class="support-image" src="https://www.perfectomobile.com/sites/default/files/images/partner/logos/jenkins-logo-3.png">
+    <div class="container-container muted-container">
+        <div id="education" class="container">
+            <h2>Education</h2>
+            <div class="col-sm-2 fill">
+                <img id="miami-logo" class="fit-image support-image" src="/static/img/M-logo-transparent.jpg">
             </div>
-            <div class="col-sm-10 content-div">
-                <h3>Undergraduate Research Assistant - Miami University</h3>
-                <h4>May - August 2017</h4>
-                <h4>Developed a Jenkins plugin to apply a static program slicing algorithm to a continuous integration server.</h4>
-                <h4>Created and administered a NodeJS server using Amazon Web Services to communicate between the plugin and
-                    a GitHub repository.
-                </h4>
-                <h4>Configured a Jenkins server on a Raspberry Pi running Linux for remote quality assurance testing.</h4>
-            </div>
-        </div>
-        <div>
-            <div class="col-sm-2">
-                <img class="support-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/234px-Java_programming_language_logo.svg.png">
-            </div>
-            <div class="col-sm-10 content-div">
-                <h3>Computer Science Teaching Assistant - Miami University</h3>
-                <h4>May - December 2016</h4>
-                <h4>Summer 2016: Object Oriented Programming under Dr. Gregory Gelfond</h4>
-                <h4>Fall 2016: Data Abstractions & Structures under Dr. Angel Bravo-Salgado</h4>
-                <h4>Evaluated programs of 30 – 50 students according to the instructor’s requirements and offered constructive
-                    feedback.
-                </h4>
-                <h4>Designed automated test classes to rapidly, transparently, and consistently grade students’ programs.</h4>
-                <h4>Reinforced students’ knowledge during twice-weekly office hours to explain course material and assist students
-                    with assignments.</h4>
+            <div class="col-sm-10">
+                <h3>Computer Science and Software Engineering - Bachelor of Science, Miami University</h3>
+                {{range .Education}}
+                <h4>{{.}}</h4>
+                {{end}}
             </div>
         </div>
     </div>
-    </div>
-    <div class="muted-container">
-    <div id="projects" class="container">
-        <h2>Projects</h2>
-        <div>
-            <div class="col-sm-2">
-                <img class="support-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png">
-            </div>
-            <div class="col-sm-10 content-div">
-                <h3>Indoor Navigation App - IT Project Management Course</h3>
-                <h4>Constructed a robust, maintainable infrastructure for the application to support future scalability.</h4>
-                <h4>Architected a REST API in Node.js to facilitate pathfinding in a complex indoor space.</h4>
-                <h4>Established communication between mobile and platform teams to synchronize project evolution.</h4>
-            </div>
-        </div>
-        <div>
-            <div class="col-sm-2">
-                <img class="support-image" src="/static/img/git-logo-transparent.jpg">
-            </div>
-            <div class="col-sm-10 content-div">
-                <h3>Tracker Management Systems - Senior Capstone</h3>
-                <h4>Built a development operations pipeline to streamline collaborative product deployment.</h4>
-                <h4>Devised an input sanitization system to prevent faulty API calls from taxing the web server.</h4>
-                <h4>Recognized inappropriate use of version control and trained colleagues on the correct use of Git to guarantee
-                    code preservation.</h4>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="color-container">
-    <div id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="col-sm-8 col-sm-offset-2">
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a data-toggle="tab" href="#nodejs"><h4>Node.js</h4></a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#java"><h4>Java</h4></a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#go"><h4>Go</h4></a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#git"><h4>Git</h4></a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#aws"><h4>AWS</h4></a>
-                </li>
-                <li>
-                    <a data-toggle="tab" href="#linux"><h4>Linux</h4></a>
-                </li>
-            </ul>
-            <div class="tab-content skills-content">
-                <div id="nodejs" class="tab-pane fade in active">
-                    <h4>Node.js is my preferred development environment. I have primarily used it to develop REST APIs with Express,
-                        but the different problems I have had to solve with it have given me a deep knowledge of the environment.</h4>
+    <div class="container-container color-container">
+        <div id="experience" class="container">
+            <h2>Experience</h2>
+            <div>
+                <div class="col-sm-2">
+                    <img class="support-image" src="https://www.perfectomobile.com/sites/default/files/images/partner/logos/jenkins-logo-3.png">
                 </div>
-                <div id="java" class="tab-pane fade">
-                    <h4>Java is the primary language that is taught at Miami University, and it was the first programming language
-                        I learned. I have solved a large number of various, diverse problems with Java because of its prevalence
-                        in my coursework.</h4>
+                <div class="col-sm-10 content-div">
+                    <h3>Research Assistant <span class="text-muted">Miami University</span></h3>
+                    <h4>May - August 2017</h4>
+                    <h4>Developed a Jenkins plugin to apply a static program slicing algorithm to a continuous integration server.
+                        Created and administered a NodeJS server using Amazon Web Services to communicate between the plugin
+                        and a GitHub repository. Configured a Jenkins server on a Raspberry Pi running Linux for remote quality
+                        assurance testing.</h4>
                 </div>
-                <div id="go" class="tab-pane fade">
-                    <h4>I have only recently started using Go, and I very much enjoy the different programming paradigms it allows
-                        for. Though I only hav a surface-level knowledge of the language currently, I plan on using it in
-                        projects in the near future. This site is built on a Go web server.</h4>
+            </div>
+            <div>
+                <div class="col-sm-2">
+                    <img class="support-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/234px-Java_programming_language_logo.svg.png">
                 </div>
-                <div id="git" class="tab-pane fade">
-                    <h4>Git is the version control system of choice at Miami University, and as such, I became familiar with
-                        it early on in my education. It has been an invaluable part of many personal and school projects,
-                        especially in more team-based classes. Recently, in an IT project management class, I used GitHub's
-                        pull request system to ensure the quality of any new code that gets pushed to the repository.</h4>
-                </div>
-                <div id="aws" class="tab-pane fade">
-                    <h4>I have used Amazon Web Services for several projects and classes, especially in the last 2 years. I have
-                        set up and administrated several EC2 virtual servers running both Windows Server and Ubuntu, primarily
-                        for hosting REST APIs. I have also set up Lambda functions, worked with databases hosted with RDS
-                        and DynamoDB, and monitored my systems using CloudWatch.</h4>
-                </div>
-                <div id="linux" class="tab-pane fade">
-                    <h4>Development using a linux stack has been an integral part of my life as a programmer. I started out using
-                        Miami's private linux server for classwork, and have moved on to starting up and administrating my
-                        own linux servers for use in coursework and personal projects.</h4>
+                <div class="col-sm-10 content-div">
+                    <h3>Teaching Assistant <span class="text-muted">Miami University</span></h3>
+                    <h4>May - December 2016</h4>
+                    <h4 class="text-muted">Summer 2016: Object Oriented Programming under Dr. Gregory Gelfond</h4>
+                    <h4 class="text-muted">Fall 2016: Data Abstractions & Structures under Dr. Angel Bravo-Salgado</h4>
+                    <h4>Evaluated programs of 30 – 50 students according to the instructor’s requirements and offered constructive
+                        feedback. Designed automated test classes to rapidly, transparently, and consistently grade students’
+                        programs. Reinforced students’ knowledge during twice-weekly office hours to explain course material
+                        and assist students with assignments.</h4>
                 </div>
             </div>
         </div>
     </div>
+    <div class="container-container muted-container">
+        <div id="projects" class="container">
+            <h2>Projects</h2>
+            <div>
+                <div class="col-sm-2">
+                    <img class="support-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png">
+                </div>
+                <div class="col-sm-10 content-div">
+                    <h3>Indoor Navigation App <span class="text-muted">IT Project Management Course</span></h3>
+                    <h4>Constructed a robust, maintainable infrastructure for the application to support future scalability.
+                        Architected a REST API in Node.js to facilitate pathfinding in a complex indoor space. Established
+                        communication between mobile and platform teams to synchronize project evolution.</h4>
+                </div>
+            </div>
+            <div>
+                <div class="col-sm-2">
+                    <img class="support-image" src="/static/img/git-logo-transparent.jpg">
+                </div>
+                <div class="col-sm-10 content-div">
+                    <h3>Tracker Management Systems <span class="text-muted">Senior Capstone</span></h3>
+                    <h4>Built a development operations pipeline to streamline collaborative product deployment. Devised an input
+                        sanitization system to prevent faulty API calls from taxing the web server. Recognized inappropriate
+                        use of version control and trained colleagues on the correct use of Git to guarantee code preservation.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-container color-container">
+        <div id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="col-sm-8 col-sm-offset-2">
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a data-toggle="tab" href="#nodejs">
+                            <h4>Node.js</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#java">
+                            <h4>Java</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#go">
+                            <h4>Go</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#git">
+                            <h4>Git</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#aws">
+                            <h4>AWS</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#linux">
+                            <h4>Linux</h4>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content skills-content">
+                    <div id="nodejs" class="tab-pane fade in active">
+                        <h4>Node.js is my preferred development environment. I have primarily used it to develop REST APIs with
+                            Express, but the different problems I have had to solve with it have given me a deep knowledge
+                            of the environment.</h4>
+                    </div>
+                    <div id="java" class="tab-pane fade">
+                        <h4>Java is the primary language that is taught at Miami University, and it was the first programming
+                            language I learned. I have solved a large number of various, diverse problems with Java because
+                            of its prevalence in my coursework.</h4>
+                    </div>
+                    <div id="go" class="tab-pane fade">
+                        <h4>I have only recently started using Go, and I very much enjoy the different programming paradigms
+                            it allows for. Though I only hav a surface-level knowledge of the language currently, I plan
+                            on using it in projects in the near future. This site is built on a Go web server.</h4>
+                    </div>
+                    <div id="git" class="tab-pane fade">
+                        <h4>Git is the version control system of choice at Miami University, and as such, I became familiar with
+                            it early on in my education. It has been an invaluable part of many personal and school projects,
+                            especially in more team-based classes. Recently, in an IT project management class, I used GitHub's
+                            pull request system to ensure the quality of any new code that gets pushed to the repository.</h4>
+                    </div>
+                    <div id="aws" class="tab-pane fade">
+                        <h4>I have used Amazon Web Services for several projects and classes, especially in the last 2 years.
+                            I have set up and administrated several EC2 virtual servers running both Windows Server and Ubuntu,
+                            primarily for hosting REST APIs. I have also set up Lambda functions, worked with databases hosted
+                            with RDS and DynamoDB, and monitored my systems using CloudWatch.</h4>
+                    </div>
+                    <div id="linux" class="tab-pane fade">
+                        <h4>Development using a linux stack has been an integral part of my life as a programmer. I started out
+                            using Miami's private linux server for classwork, and have moved on to starting up and administrating
+                            my own linux servers for use in coursework and personal projects.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="header-footer">
-    <div id="contact" class="container">
+        <div id="contact" class="container">
 
-    </div>
+        </div>
     </div>
 </body>
 

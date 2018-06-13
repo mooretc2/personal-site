@@ -136,3 +136,7 @@ h3 {
 .header-footer {
     background-color: #3d84a8a3;
 }
+
+.container-container {
+    padding-bottom: 50px;
+}
