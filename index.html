@@ -124,15 +124,60 @@
     </div>
     <div id="skills" class="container">
         <h2>Skills</h2>
-        {{range .Skills}}
-        <p>{{.}}</p>
-        {{end}}
-    </div>
-    <div id="links" class="container">
-        <h2>Links</h2>
-        {{range .Links}}
-        <p>{{.}}</p>
-        {{end}}
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-toggle="tab" href="#nodejs">Node.js</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#java">Java</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#go">Go</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#git">Git</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#aws">AWS</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#linux">Linux</a>
+            </li>
+        </ul>
+
+        <div class="class-content">
+            <div id="nodejs" class="tab-pane fade in active">
+                <h4>Node.js is my preferred development environment. I have primarily used it to develop REST APIs with Express,
+                    but the different problems I have had to solve with it have given me a deep knowledge of the environment.</h4>
+            </div>
+            <div id="java" class="tab-pane fade">
+                <h4>Java is the primary language that is taught at Miami University, and it was the first programming language
+                    I learned. I have solved a large number of various, diverse problems with Java because of its prevalence
+                    in my coursework.</h4>
+            </div>
+            <div id="go" class="tab-pane fade">
+                <h4>I have only recently started using Go, and I very much enjoy the different programming paradigms it allows
+                    for. Though I only hav a surface-level knowledge of the language currently, I plan on using it in projects
+                    in the near future. This site is built on a Go web server.</h4>
+            </div>
+            <div id="git" class="tab-pane fade">
+                <h4>Git is the version control system of choice at Miami University, and as such, I became familiar with it early
+                    on in my education. It has been an invaluable part of many personal and school projects, especially in
+                    more team-based classes. Recently, in an IT project management class, I used GitHub's pull request system
+                    to ensure the quality of any new code that gets pushed to the repository.</h4>
+            </div>
+            <div id="aws" class="tab-pane fade">
+                <h4>I have used Amazon Web Services for several projects and classes, especially in the last 2 years. I have
+                    set up and administrated several EC2 virtual servers running both Windows Server and Ubuntu, primarily
+                    for hosting REST APIs. I have also set up Lambda functions, worked with databases hosted with RDS and
+                    DynamoDB, and monitored my systems using CloudWatch.</h4>
+            </div>
+            <div id="linux" class="tab-pane fade">
+                <h4>Development using a linux stack has been an integral part of my life as a programmer. I started out using
+                    Miami's private linux server for classwork, and have moved on to starting up and administrating my own
+                    linux servers for use in coursework and personal projects.</h4>
+            </div>
+        </div>
     </div>
 </body>
 
