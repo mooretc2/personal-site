@@ -116,6 +116,10 @@ h3 {
     max-height: 200px;
 }
 
+.fade {
+    opacity: 1;
+}
+
 .support-image {
     max-width: 100%;
     margin-top: 20px;
