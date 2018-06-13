@@ -130,7 +130,7 @@ h3 {
 }
 
 .skill-tab:hover {
-    background-color: #46cdcf59;
+    background-color: #46cdcf59 !important;
 }
 
 .nav-tabs>li.active>a {
