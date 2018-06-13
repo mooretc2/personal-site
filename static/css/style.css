@@ -134,7 +134,7 @@ h3 {
 }
 
 .nav-tabs>li.active>a {
-    background-color: #46cdcfb8;
+    background-color: #46cdcfb8 !important;
 }
 
 .content-div {
