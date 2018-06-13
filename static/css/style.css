@@ -129,8 +129,8 @@ h3 {
     margin-right: auto;
 }
 
-.skill-tab:hover {
-    background-color: #46cdcf59 !important;
+.nav-tabs>li>a:hover {
+    background-color: #46cdcf59;
 }
 
 .nav-tabs>li.active>a {
