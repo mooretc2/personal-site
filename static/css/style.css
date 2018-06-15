@@ -163,12 +163,13 @@ h3 {
     color: #ffffff !important;
 }
 
-.links {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .contact-icon { 
     margin: auto;
     display: block;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.phone {
+    text-align: center;
 }
