@@ -89,11 +89,6 @@ h3 {
     }
 }
 
-#header {
-    padding-top: 80px;
-    margin-bottom: 0px;
-}
-
 #headshot {
     width: 300px;
     border-radius: 50%;
@@ -151,6 +146,8 @@ h3 {
 
 .header {
     background-color: #3d84a8a3;
+    padding-top: 80px;
+    margin-bottom: 0px;
 }
 
 .container-container {
@@ -172,4 +169,11 @@ h3 {
 
 .phone {
     text-align: center;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
 }
