@@ -149,11 +149,26 @@ h3 {
     background-color: #abedd8a1;
 }
 
-.header-footer {
+.header {
     background-color: #3d84a8a3;
 }
 
 .container-container {
     padding-top: 20px;
     padding-bottom: 50px;
+}
+
+.footer {
+    background-color: #48466d;
+    color: #ffffff !important;
+}
+
+.links {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-icon { 
+    margin: auto;
+    display: block;
 }
