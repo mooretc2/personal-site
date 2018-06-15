@@ -104,9 +104,13 @@ h3 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
-#intro {
+#title {
     text-align: center;
     font-size: 35px;
+}
+
+#intro {
+    text-align: center;
 }
 
 #java-logo {
