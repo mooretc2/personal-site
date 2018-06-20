@@ -178,6 +178,16 @@ h3 {
     text-align: center;
 }
 
+.icon-text {
+    color: #48466d;
+    font-weight: bold;
+}
+
+.top-icon-text {
+    color: #46cdcf;
+    font-weight: bold;
+}
+
 .phone {
     text-align: center;
 }
