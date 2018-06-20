@@ -171,7 +171,11 @@ h3 {
     margin: auto;
     display: block;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.contact-icon-a {
+    text-align: center;
 }
 
 .phone {
