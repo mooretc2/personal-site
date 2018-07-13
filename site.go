@@ -8,47 +8,39 @@ import (
 	"strings"
 )
 
-//Content is a struct for containing page content
-type Content struct {
-	Intro      string
-	Experience []string
-	Projects   []string
-	Skills     []string
-	Links      []string
-	Education  []string
+//Contains data for a blogpost for use in the html template.
+type Blogpost struct {
+	Title string
+	Date string
+	Headers []string
+	Contents []string
 }
 
 var index = template.Must(template.ParseFiles("index.html"))
 
 // loadContent loads site content from text documents.
 // It returns a Content struct that contains that information.
-func loadContent() (*Content, error) {
+func loadContent() ([]Blogpost, error) {
 
-	//load content from text files
-	i, err := ioutil.ReadFile("content/intro.txt")
-	e, err := ioutil.ReadFile("content/experience.txt")
-	p, err := ioutil.ReadFile("content/projects.txt")
-	s, err := ioutil.ReadFile("content/skills.txt")
-	l, err := ioutil.ReadFile("content/links.txt")
-	ed, err := ioutil.ReadFile("content/education.txt")
+	fileList, err := ioutil.ReadDir("blogposts")
+	posts := []Blogpost{}
 	if err != nil {
 		return nil, err
 	}
+	for _, file := range fileList {
+		//read in and split raw post into sections
+		rawPost, err := strings.Split(string(ioutil.ReadFile("blogposts/"+file.Name())), "\n::::\n")
+		if err != nil {
+			return nil, err
+		}
+		post := Blogpost{Title: rawPost[0],
+			Date: rawPost[1],
+			Headers: strings.Split(rawPost[2], "\n::\n")
+			Contents: strings.Split(rawPost[3], "\n::\n")}
+		posts = append(posts, post)
+	}
 
-	//convert input to strings, then split content into separate strings
-	intro := string(i)
-	experience := strings.Split(string(e), "\n::\n")
-	projects := strings.Split(string(p), "\n::\n")
-	skills := strings.Split(string(s), "\n::\n")
-	links := strings.Split(string(l), "\n::\n")
-	education := strings.Split(string(ed), "\n::\n")
-
-	return &Content{Intro: intro,
-		Experience: experience,
-		Projects:   projects,
-		Skills:     skills,
-		Links:      links,
-		Education:  education}, nil
+	return posts
 }
 
 // renderTemplate executes the html template using the
