@@ -16,3 +16,4 @@ site
 
 # Resources that don't need to go in the repository
 static/img
+static/docs

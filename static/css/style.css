@@ -48,7 +48,7 @@ h3 {
     color: #ffffff !important;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .navbar-header {
         float: none;
     }
